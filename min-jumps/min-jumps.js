@@ -7,15 +7,15 @@ const minJumps = arr => {
 
   for (let i = currentIndex; i <= arr[currentIndex] + currentIndex; i++) {
     if (arr[currentIndex] < arr[i] && arr[currentIndex] < arr.slice(currentIndex).length) {
-      console.log('before',arr[currentIndex])
+      console.log('before', arr[currentIndex])
       currentIndex = i;
-      console.log('after',arr[currentIndex])
-      count++
+      console.log('after', arr[currentIndex])
+      count++;
     } else if (i === arr[currentIndex] + currentIndex && i < arr.length) {
       console.log('before', arr[currentIndex])
       currentIndex = i;
       console.log('after', arr[currentIndex])
-      count++
+      count++;
 
     }
   }
